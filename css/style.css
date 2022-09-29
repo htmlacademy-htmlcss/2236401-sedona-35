@@ -1,0 +1,44 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.greetings {
+    background-color: #94989c;
+    background-image: url(../images/index-background.jpg);
+    background-size: cover;
+    height: 485px;
+}
+
+.greetings-title {
+    background-image: url(../images/divider.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: inherit;
+}
+
+.newsletter-background {
+    background-color: #6f92ab;
+    background-image: url(../images/newsletter-bg.jpg);
+    background-size: cover;
+    height: 414.86px ;
+}
+
+.hotel-search-form {
+    background-color: #5d6a73;
+    background-image: url(../images/form-filter-bg.jpg);
+    background-size: cover;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
