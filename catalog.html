@@ -81,7 +81,7 @@
       </ul>
 
       <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="hotel-filter-group">
+        <fieldset class="hotel-filter-group filter-infrastructure">
           <legend class="hotel-filter-title">
             Инфраструктура:
           </legend>
@@ -107,7 +107,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="hotel-filter-group">
+        <fieldset class="hotel-filter-group filter-housing">
           <legend class="hotel-filter-title">
             Тип Жилья:
           </legend>
@@ -130,7 +130,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="hotel-filter-group">
+        <fieldset class="hotel-filter-group filter-price">
           <legend class="hotel-filter-title">
             Стоимость, &#x20bd;
           </legend>
@@ -153,13 +153,13 @@
 
     <section class="hotel-filter-result">
       <h3 class="visually-hidden">Найдено гостинец по запросу</h3>
-      <p class="filter-list uppercase">Найдено гостиниц:38</p>
+      <p class="filter-sum uppercase">Найдено гостиниц:38</p>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
         <option value="popular">Сначала популярные</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
-      <a href="#" class="button button-active">
+      <a href="#" class="button-view button-active">
         <span class="visually-hidden">Показать карточки</span>
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_33548_928)">
@@ -178,7 +178,7 @@
           </defs>
         </svg>
       </a>
-      <a class="button" href="#">
+      <a class="button-view" href="#">
         <span class="visually-hidden">Показать слайды</span>
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_33548_2210)">
@@ -193,7 +193,7 @@
           </defs>
         </svg>
       </a>
-      <a class="button" href="#">
+      <a class="button-view" href="#">
         <span class="visually-hidden">Показать список</span>
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_33548_2388)">
@@ -229,9 +229,9 @@
             <span class="hotel-price">От 4000 &#x20bd;</span>
           </div>
           <div class="card-button">
-            <a class="about-hotel button" href="#">Подробнее</a>
-            <form class="button-to-favorites">
-              <button class="button uppercase" type="button">В избранное</button>
+            <a class="about-hotel button uppercase" href="#">Подробнее</a>
+            <form class="button">
+              <button class="button-to-favorites uppercase" type="button">В избранное</button>
             </form>
           </div>
           <div class="rating-wrapper">
@@ -249,9 +249,9 @@
             <span class="hotel-price">От 5000 &#x20bd;</span>
           </div>
           <div class="card-button">
-            <a class="about-hotel button" href="#">Подробнее</a>
-            <form class="button-to-favorites">
-              <button class="button button-active uppercase" type="button">В избранном</button>
+            <a class="about-hotel button uppercase" href="#">Подробнее</a>
+            <form class="button">
+              <button class="button-to-favorites button-favorite-active uppercase" type="button">В избранном</button>
             </form>
           </div>
           <div class="rating-wrapper">
@@ -269,9 +269,9 @@
             <span class="hotel-price">От 2500 &#x20bd;</span>
           </div>
           <div class="card-button">
-            <a class="about-hotel button" href="#">Подробнее</a>
-            <form class="button-to-favorites">
-              <button class="button uppercase">В избранное</button>
+            <a class="about-hotel button uppercase" href="#">Подробнее</a>
+            <form class="button">
+              <button class="button-to-favorites uppercase">В избранное</button>
             </form>
           </div>
           <div class="rating-wrapper">
@@ -284,14 +284,14 @@
             <img src="images/hotels/hotel-greentree.jpg" width="300" height="212" alt="GreenTree Inn.">
           </a>
           <a class="hotel-item-title">GreenTree Inn</a>
-          <div>
+          <div class='hotel-price-wrapper'>
             <span class="type-of-housing">Гостиница</span>
             <span class="hotel-price">От 1500 &#x20bd;</span>
           </div>
-          <div>
-            <a class="about-hotel button" href="#">Подробнее</a>
-            <form class="button-to-favorites">
-              <button class="button uppercase">В избранное</button>
+          <div class="card-button">
+            <a class="about-hotel button uppercase" href="#">Подробнее</a>
+            <form class="button">
+              <button class="button-to-favorites uppercase">В избранное</button>
             </form>
           </div>
           <div class="rating-wrapper">
@@ -315,19 +315,7 @@
           <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">5</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">6</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">7</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">8</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">9</a>
+          <a class="pagination-link" href="#">...</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
