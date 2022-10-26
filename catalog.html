@@ -69,10 +69,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <img width="9" height="21" src="images/breadcrumbs-gt.svg" alt="Назад.">
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
 
@@ -139,14 +136,16 @@
             </fieldset>
 
             <fieldset class="hotel-filter-group filter-price">
-              <legend class="hotel-filter-title">
+              <legend class="hotel-filter-title price-title">
                 Стоимость, &#x20bd;:
               </legend>
               <label class="price label-price-min">
-                <input class="price-input price-min" placeholder="0" value="0" type="number" name="price-min">от
+                <input class="price-input price-min" placeholder="0" type="number" name="price-min" min="0"
+                  max="999999">от
               </label>
               <label class="price label-price-max">
-                <input class="price-input price-max" placeholder="9000" value="9000" type="number" name="price-max">до
+                <input class="price-input price-max" placeholder="9000" type="number" name="price-max" min="0"
+                  max="999999">до
               </label>
               <div class="range">
                 <div class="range-scale">
@@ -367,7 +366,6 @@
           </svg>
         </a>
       </div>
-
     </footer>
   </div>
 </body>
