@@ -59,7 +59,8 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества городка Седона</h2>
         <div class="advantages-text">
-          <p class="advantages-text-bold uppercase">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!
+          <p class="advantages-text-bold uppercase">Седона &mdash; небольшой городок в Аризоне, заслуживающий
+            большего!
           </p>
           <p class="advantages-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
@@ -108,12 +109,14 @@
           </li>
           <li class="serve-item serve-container serve-burger">
             <h3 class="serve-title uppercase">Еда</h3>
-            <p class="serve-description">Всегда заказывайте <br>топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
+            <p class="serve-description">Всегда заказывайте <br>топовый фирменный бургер,
+              вы&nbsp;не&nbsp;разочаруетесь!
             </p>
           </li>
           <li class="serve-item serve-container serve-souvenir colored-2">
             <h3 class="serve-title uppercase">Сувениры</h3>
-            <p class="serve-description">Не только китайского, но&nbsp;и&nbsp;настоящего местного <br>производства!</p>
+            <p class="serve-description">Не только китайского, но&nbsp;и&nbsp;настоящего местного <br>производства!
+            </p>
           </li>
         </ul>
       </section>
@@ -121,7 +124,8 @@
       <section class="search-hotels">
         <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <span class="interested uppercase">Заинтересовались?</span>
-        <p class="dates-of-stay">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
+        <p class="dates-of-stay">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
+          в
           Седоне</p>
         <a class="search-hotel-link brown-button uppercase" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
@@ -134,7 +138,7 @@
           <h2 class="newsletter-subscription uppercase">Подпишитесь на рассылку</h2>
           <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="newsletter-email" type="email" placeholder="Ваш e-mail" name="email">
+            <input class="newsletter-email" type="email" placeholder="Ваш e-mail" name="email" required>
             <button class="button newsletter-button uppercase" type="submit">Подписаться</button>
           </form>
         </div>
@@ -185,7 +189,7 @@
 
   <div class="modal-container">
     <div class="modal modal-auth">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть.</span>
       </button>
       <section class="modal-content">
@@ -193,8 +197,8 @@
         <form class="search-modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="field-group">
             <label class="title-modal-form" for="arrival-date-search">Дата заезда:</label>
-            <input class="modal-form-field field" type="datetime" id="arrival-date-search" name="arrival-date"
-              placeholder="27 апреля 2020">
+            <input class="modal-form-field field" type="text" id="arrival-date-search" name="arrival-date"
+              value="27 апреля 2020">
             <button type="button" class="calendar">
               <span class="visually-hidden">Календарь для выбора даты заезда.</span>
             </button>
@@ -202,8 +206,8 @@
           </div>
           <div class="field-group">
             <label class="title-modal-form" for="departure-date-search">Дата выезда:</label>
-            <input class="modal-form-field field" type="datetime" id="departure-date-search" name="departure-date"
-              placeholder="1 сентября 2023">
+            <input class="modal-form-field field" type="text" id="departure-date-search" name="departure-date"
+              value="1 сентября 2023">
             <span class="suitability-date">На эти даты есть свободные номера. Пока есть.</span>
             <button type="button" class="calendar">
               <span class="visually-hidden">Календарь для выбора даты заезда.</span>
@@ -214,59 +218,61 @@
             <div class="wrapper-number-input">
               <input class="modal-form-field people-number-input" type="number" id="adults-modal-form"
                 name="adults-number" placeholder="2">
-              <div class="number-controls">
-                <div class="button-people-number-wrapper">
-                  <button class="number-button number-less" type="button">
-                    <svg class="number-button-svg" width="14" height="2" viewBox="0 0 14 2"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" />
-                    </svg>
-                    <span class="visually-hidden">Меньше.</span>
-                  </button>
-                </div>
-                <div class="button-people-number-wrapper">
-                  <button class="number-button number-more" type="button">
-                    <svg class="number-button-svg" width="14" height="14" viewBox="0 0 14 14"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
-                    </svg>
-                    <span class="visually-hidden">Больше.</span>
-                  </button>
-                </div>
+              <div class="button-people-number-wrapper number-less">
+                <button class="number-button button-less" type="button">
+                  <svg class="number-button-svg" width="14" height="2" viewBox="0 0 14 2"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" />
+                  </svg>
+                  <span class="visually-hidden">Меньше.</span>
+                </button>
+              </div>
+              <div class="button-people-number-wrapper number-more">
+                <button class="number-button button-more" type="button">
+                  <svg class="number-button-svg" width="14" height="14" viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg>
+                  <span class="visually-hidden">Больше.</span>
+                </button>
               </div>
             </div>
           </div>
           <div class="field-group people-number popover-info">
-            <label class="title-modal-form child-info" for="child-modal-form">Дети:</label>
-            <div class="popover">
-              <p class="popover-content">
-                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-                размещаются бесплатно.
-              </p>
+            <div class="popover-container">
+              <label class="title-modal-form child-info" for="child-modal-form">Дети: </label>
+
+                <a href="#" class="popover-information-link">
+                  <span class="visually-hidden">Показать дополнительную информацию</span>
+                </a>
+                <div class="popover">
+                  <p class="popover-content">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                    размещаются бесплатно.
+                  </p>
+                </div>
+              
             </div>
             <div class="wrapper-number-input">
-              <input class="modal-form-field people-number-input" type="number" id="child-modal-form"
-                name="child-number" placeholder="2">
+              <input class="modal-form-field people-number-input" type="number" id="child-modal-form" name="child-number" placeholder="2">
 
-              <div class="number-controls">
-                <div class="button-people-number-wrapper">
-                  <button class="number-button number-less" type="button">
-                    <svg class="number-button-svg" width="14" height="2" viewBox="0 0 14 2"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" />
-                    </svg>
-                    <span class="visually-hidden">Меньше.</span>
-                  </button>
-                </div>
-                <div class="button-people-number-wrapper">
-                  <button class="number-button number-more" type="button">
-                    <svg class="number-button-svg" width="14" height="14" viewBox="0 0 14 14"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
-                    </svg>
-                    <span class="visually-hidden">Больше.</span>
-                  </button>
-                </div>
+              <div class="button-people-number-wrapper number-less">
+                <button class="number-button button-less" type="button">
+                  <svg class="number-button-svg" width="14" height="2" viewBox="0 0 14 2"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" />
+                  </svg>
+                  <span class="visually-hidden">Меньше.</span>
+                </button>
+              </div>
+              <div class="button-people-number-wrapper number-more">
+                <button class="number-button button-more" type="button">
+                  <svg class="number-button-svg" width="14" height="14" viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg>
+                  <span class="visually-hidden">Больше.</span>
+                </button>
               </div>
             </div>
           </div>
@@ -275,6 +281,7 @@
       </section>
     </div>
   </div>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>
