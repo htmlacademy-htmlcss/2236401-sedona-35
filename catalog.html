@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="styles/styles.css">
   <title>Гостиницы Седоны</title>
 </head>
@@ -61,8 +62,7 @@
               <a class="breadcrumbs-link" href="index.html">
                 <svg role="img" aria-label="Вернуться на главную страницу." width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
-                    fill="white" />
+                    d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" fill="white" />
                   <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
                 </svg>
               </a>
@@ -136,18 +136,18 @@
                 Стоимость, &#x20bd;:
               </legend>
               <label class="price label-price-min">
-                <input class="price-input price-min" placeholder="0" type="number" name="price-min" min="0" max="999999">
+                <input class="price-input price-min" value="0" type="number" name="price-min" min="0" max="999999">
               </label>
               <label class="price label-price-max">
-                <input class="price-input price-max" placeholder="9000" type="number" name="price-max" min="0" max="999999">
+                <input class="price-input price-max" value="9000" type="number" name="price-max" min="0" max="999999">
               </label>
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 226px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -248,7 +248,7 @@
 
                 <a class="about-hotel button brown-button uppercase" href="#">Подробнее</a>
                 <form class="favourite-button-form">
-                  <button class="button button-to-favorites uppercase">В избранное</button>
+                  <button class="button button-to-favorites uppercase" type="button">В избранное</button>
                 </form>
 
                 <p class="hotel-stars hotel-stars--three">
@@ -265,13 +265,13 @@
                 <img class="hotel-image" src="images/hotels/hotel-greentree.jpg" width="300" height="212" alt="GreenTree Inn.">
               </a>
               <a href="#" class="hotel-item-title">GreenTree Inn</a>
-              <div class='hotel-description-wrapper'>
+              <div class="hotel-description-wrapper">
                 <span class="type-of-housing">Гостиница</span>
                 <span class="hotel-price">От 1500 &#x20bd;</span>
 
                 <a class="about-hotel button brown-button uppercase" href="#">Подробнее</a>
                 <form class="favourite-button-form">
-                  <button class="button button-to-favorites uppercase">В избранное</button>
+                  <button class="button button-to-favorites uppercase" type="button">В избранное</button>
                 </form>
 
                 <p class="hotel-stars hotel-stars--two">
@@ -311,8 +311,7 @@
       <section class="newsletter">
         <div class="newsletter-wrapper">
           <h2 class="newsletter-subscription newsletter-black-text uppercase">Подпишитесь на рассылку</h2>
-          <p class="newsletter-text newsletter-black-text">Только полезная информация и никакого спама, честное
-            бойскаутское!</p>
+          <p class="newsletter-text newsletter-black-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="get">
             <input class="newsletter-email" type="email" placeholder="Ваш e-mail" name="email" required>
             <button class="button newsletter-button uppercase" type="submit">Подписаться</button>

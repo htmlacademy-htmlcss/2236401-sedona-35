@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="styles/styles.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -71,8 +72,7 @@
               <h3 class="advantages-title light-theme uppercase">Настоящий городок</h3>
               <p class="advantages-description">Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="advantages-image advantages-image-sedona" src="images/adv-sedona.jpg" width="800" height="384"
-              alt="Живописные окрестности Седоны.">
+            <img class="advantages-image advantages-image-sedona" src="images/adv-sedona.jpg" width="800" height="384" alt="Живописные окрестности Седоны.">
           </li>
           <li class="advantages-item colored-2">
             <div class="advantages-container">
@@ -93,8 +93,7 @@
             </div>
           </li>
           <li class="advantages-item advantages-item--spec colored-1">
-            <img class="advantages-image advantages-image-bridge" src="images/adv-bridge.jpg" width="800" height="384"
-              alt="Название моста соотвествует виду пейзажа вокруг. Красные холмы и горы, красная дорога и мост над пропостью, захватывающей дух.">
+            <img class="advantages-image advantages-image-bridge" src="images/adv-bridge.jpg" width="800" height="384" alt="Название моста соотвествует виду пейзажа вокруг. Красные холмы и горы, красная дорога и мост над пропостью, захватывающей дух.">
             <div class="advantages-container advantages-container--spec">
               <h3 class="advantages-title light-theme  uppercase">Там есть мост дьявола</h3>
               <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -124,9 +123,7 @@
       <section class="search-hotels">
         <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <span class="interested uppercase">Заинтересовались?</span>
-        <p class="dates-of-stay">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
-          в
-          Седоне</p>
+        <p class="dates-of-stay">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-hotel-link brown-button uppercase" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
     </main>
@@ -193,31 +190,27 @@
         <form class="search-modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="field-group">
             <label class="title-modal-form" for="arrival-date-search">Дата заезда:</label>
-            <input class="modal-form-field field" type="text" id="arrival-date-search" name="arrival-date"
-              value="27 апреля 2020">
-            <button type="button" class="calendar">
+            <input class="modal-form-field field" type="text" id="arrival-date-search" name="arrival-date" value="27 апреля 2020" required>
+            <button class="calendar" type="button">
               <span class="visually-hidden">Календарь для выбора даты заезда.</span>
             </button>
             <span class="suitability-date past-date">Мы не можем отправить вас в прошлое.</span>
           </div>
           <div class="field-group">
             <label class="title-modal-form" for="departure-date-search">Дата выезда:</label>
-            <input class="modal-form-field field" type="text" id="departure-date-search" name="departure-date"
-              value="1 сентября 2023">
+            <input class="modal-form-field field" type="text" id="departure-date-search" name="departure-date" value="1 сентября 2023" required>
             <span class="suitability-date">На эти даты есть свободные номера. Пока есть.</span>
-            <button type="button" class="calendar">
+            <button class="calendar" type="button">
               <span class="visually-hidden">Календарь для выбора даты заезда.</span>
             </button>
           </div>
           <div class="field-group people-number">
             <label class="title-modal-form" for="adults-modal-form">Взрослые:</label>
             <div class="wrapper-number-input">
-              <input class="modal-form-field people-number-input" type="number" id="adults-modal-form"
-                name="adults-number" placeholder="2">
+              <input class="modal-form-field people-number-input" type="number" id="adults-modal-form" name="adults-number" placeholder="2" required>
               <div class="button-people-number-wrapper number-less">
                 <button class="number-button button-less" type="button">
-                  <svg class="number-button-svg" width="14" height="2" viewBox="0 0 14 2"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg class="number-button-svg" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L0 2L14 2V0L0 0Z" />
                   </svg>
                   <span class="visually-hidden">Меньше.</span>
@@ -225,8 +218,7 @@
               </div>
               <div class="button-people-number-wrapper number-more">
                 <button class="number-button button-more" type="button">
-                  <svg class="number-button-svg" width="14" height="14" viewBox="0 0 14 14"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg class="number-button-svg" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                   </svg>
                   <span class="visually-hidden">Больше.</span>
@@ -250,12 +242,11 @@
 
             </div>
             <div class="wrapper-number-input">
-              <input class="modal-form-field people-number-input" type="number" id="child-modal-form" name="child-number" placeholder="2">
+              <input class="modal-form-field people-number-input" type="number" id="child-modal-form" name="child-number" placeholder="2" required>
 
               <div class="button-people-number-wrapper number-less">
                 <button class="number-button button-less" type="button">
-                  <svg class="number-button-svg" width="14" height="2" viewBox="0 0 14 2"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg class="number-button-svg" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L0 2L14 2V0L0 0Z" />
                   </svg>
                   <span class="visually-hidden">Меньше.</span>
@@ -263,8 +254,7 @@
               </div>
               <div class="button-people-number-wrapper number-more">
                 <button class="number-button button-more" type="button">
-                  <svg class="number-button-svg" width="14" height="14" viewBox="0 0 14 14"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg class="number-button-svg" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                   </svg>
                   <span class="visually-hidden">Больше.</span>
