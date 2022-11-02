@@ -878,7 +878,7 @@ body {
     width: 1060px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin: 40px auto 30px;
 }
 
